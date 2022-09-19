@@ -4,8 +4,8 @@ body {
 }
 
 .header {
-	background-color: green;
-	color: white;
+	background-color: black;
+	color: red;
 	padding: 20px 0;
 	font-size: 1.2rem;
 	font-weight: bold;
@@ -27,7 +27,7 @@ body {
 }
 
 .main-menu a {
-	color: white;
+	color: red;
 	text-decoration: none;
 }
 
@@ -41,8 +41,8 @@ p {
 }
 
 .footer {
-	background-color: green;
-	color: white;
+	background-color: black;
+	color: red;
 	padding: 20px 0;
 }
 
