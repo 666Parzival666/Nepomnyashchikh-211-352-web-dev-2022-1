@@ -1,81 +1,21 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en">
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>LabRab_2</title>
 	<link rel="stylesheet" href="style.css">
-	<link rel="preconnect" href="https://fonts.googleapis.com">
-	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Roboto&display=swap" rel="stylesheet">
-	<title>Форма обратной связи</title>
 </head>
 <body>
-	<main>
-
-		<header class="header">		
-			<h1>Форма обратной связи</h1>
-		</header>
-
-
-			<form method="POST" action="http://httpbin.org/post" enctype="multipart/form-data">
-
-			<input type="hidden" name="user_id" value="1">
-
-			<div class="registration">
-				<div class="fio">
-					<label for="fio">ФИО</label>
-					<input type="text" name="fio" id="fio" placeholder="Введите ФИО" required>
-				</div>
-
-				<div>
-					<label for="email">Адрес электронной почты</label>
-					<input type="email" name="email" id="email" placeholder="Введите E-mail" required>
-				</div>
-			</div>
-
-				<fieldset>
-
-    				<legend>Откуда Вы о нас узнали?</legend>
-
-					    <div>
-					      <input type="radio" id="friends" name="source" value="friends"
-					             checked required>
-					      <label for="friends">Рассказали друзья</label>
-					    </div>
-
-					    <div>
-					      <input type="radio" id="internet" name="source" value="internet">
-					      <label for="internet" required>Реклама в интернете</label>
-					    </div>
-
-				</fieldset>
-
-				<div class="options">
-					<label for="category">Категория обращения</label>
-					<select name="category_id" id="category">
-						<option value="1">Жалоба</option>
-						<option value="2" selected>Предложение</option>
-					</select>
-				</div>
-
-				<div>
-					<label for="msg" class="msg">Текст сообщения</label>
-					<textarea name="msg" id="msg" cols="60" rows="10" placeholder="Введите текст"></textarea>
-				</div>
-
-				<div class="agreement">
-					<input type="checkbox" name="agreement" id="agreement" required value="true">
-					<label for="agreement">Согласен с обработкой персональных данных</label>
-				</div>
-
-				<div class="attach">
-					<label for="attachment">Вложение</label>
-					<input type="file" name="attachment" id="attachment">
-				</div>
-
-			<button type="submit">Отправить</button>
-		</form>
-	</main>
-	
+	<div class="form_auth_block">
+		<div class="form_auth_block_content">
+			<p class="form_auth_block_head_text">Авторизация</p>
+			<label>Введите Ваш логин (E-mail)</label>
+			<input type="email" name="auth_email" placeholder="Введите Ваш E-mail" required >
+			<label>Введите Ваш пароль</label>
+			<input type="password" name="auth_pass" placeholder="Введите пароль" required >
+			<button class="btn"><a href="index.html">Войти</a></button>
+		</div>
+	</div>
 </body>
 </html>
