@@ -12,8 +12,10 @@ body {
     height: 500px;
     margin: 0 auto;
 }
+
 .form_auth_block_content{
   padding-top: 15%;
+
 }
 .form_auth_block_head_text{
     display: block;
