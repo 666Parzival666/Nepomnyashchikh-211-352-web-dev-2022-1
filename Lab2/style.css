@@ -1,6 +1,10 @@
 body {
-    background-image: url("images/fon.jpg");
+    background-image: url("images/fon.png");
     background-size: 100%;
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Roboto', sans-serif;
+    color: black;
 }
 
 .form_auth_block {
@@ -55,11 +59,64 @@ input:focus {
     cursor: pointer;
 }
 fieldset {
-    color: white;
+    color: Black;
+    border:0 none;
+    text-align: center;
+    margin: 10px 10px 10px 10px;
 }
 .baton {
-    text-align: center;
+     margin-left: 200px;
 }
 .fri {
     color: black;
+}
+
+main {
+    text-align: center;
+}
+
+.fio {
+    margin-bottom: 10px;
+}
+
+legend {
+    display: inline-block;
+}
+
+textarea {
+    margin-bottom: 10px;
+    resize: none;
+}
+
+.options {
+    margin-bottom: 10px;
+}
+
+.msg {
+    vertical-align: top;
+}
+
+.agreement {
+    margin-bottom: 10px;
+}
+
+.attach {
+    margin-bottom: 10px;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+.login {
+    margin-bottom: 10px;
+}
+
+.remember {
+    margin-top: 10px;
+}
+
+.logbtn {
+    margin-top: 10px;
 }
