@@ -4,63 +4,67 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Форма обратной связи</title>
+	<link rel="stylesheet" href="style.css">
 </head>
 <body>
 	<main>
-		<h1>Форма обратной связи</h1>
+		<div class="form_auth_block">
+			<div class="form_auth_block_content">
+				<p class="form_auth_block_head_text">Форма обратной связи</p>
 
-		<form method="POST" action="https://httpbin.org/post" enctype="multipart/form-data">
-			<input type="hidden" name="user_id" value="1">
+				<form method="POST" action="https://httpbin.org/post" enctype="multipart/form-data">
+				<input type="hidden" name="user_id" value="1">
 			
-			<div>
-				<label for="fio">ФИО</label>
-				<input type="text" name="fio" id="fio" required placeholder="Введите ФИО">
-			</div>
-
-			<div>
-				<label for="email">E-mail</label>
-				<input type="email" name="email" id="email" required>
-			</div>
-
-			<fieldset>
-				<legend>Откуда вы о нас узнали?</legend>
+				<div>
+					<label for="fio">ФИО</label>
+					<input type="text" name="fio" id="fio" required placeholder="Введите ФИО">
+				</div>
 
 				<div>
-					<input type="radio" id="friends" name="source" value="friends" checked>
-             		<label for="friends">Рассказали друзья</label>
+					<label for="email">E-mail</label>
+					<input type="email" name="email" id="email" required placeholder="Введите E-mail">
+				</div>
+
+				<fieldset>
+					<legend>Откуда Вы о нас узнали?</legend>
+
+					<div class="fri">
+						<input type="radio" id="friends" name="source" value="friends" checked>
+    	         		<label for="friends">Рассказали друзья</label>
+        	     	</div>
+
+            	 	<div class="fri">
+             			<input type="radio" id="internet" name="source" value="internet">
+      					<label for="internet">Реклама в интернете</label>
+             	
+             	</fieldset>
+
+             	<div>
+             		<label for="category">Категория обращения</label>
+             		<select name="category_id" id="category">
+             			<option value="1">Жалоба</option>
+             			<option value="2" selected>Предложение</option>
+             		</select>
              	</div>
 
              	<div>
-             		<input type="radio" id="internet" name="source" value="internet">
-      				<label for="internet">Реклама в интернете</label>
-             	
-             </fieldset>
+					<label for="msg">Текст сообщения</label>
+					<textarea type="msg" name="msg" id="email" cols="60" rows="20" required placeholder="Введите Текст :)"></textarea> 
+				</div>
 
-             <div>
-             	<label for="category">Категория обращения</label>
-             	<select name="category_id" id="category" multiple>
-             		<option value="1">Жалоба</option>
-             		<option value="2" selected>Предложение</option>
-             	</select>
-             </div>
+				<div>
+					<input type="checkbox" name="agreement" id="agreement" value="true" required>
+					<label for="agreement">Согласен с обработкой персоальных данных</label>
+				</div>
 
-             <div>
-				<label for="msg">Текст сообщения</label>
-				<textarea type="msg" name="msg" id="email" cols="60" rows="20" required placeholder="Введите Текст :)"></textarea> 
-			</div>
+				<div>
+					<input type="file" name="attachmen" id="attachmen">
+					<label for="attachmen">Вложение</label>
+				</div>
 
-			<div>
-				<input type="checkbox" name="agreement" id="agreement" value="true" required>
-				<label for="agreement">Согласен с обработкой персоальных данных</label>
-			</div>
-
-			<div>
-				<input type="file" name="attachmen" id="attachmen">
-				<label for="attachmen">Вложение</label>
-			</div>
-
-			<button type="submit">Отправить</button>
-		</form>
+				<button class="baton" type="submit">Отправить</button>
+			</form>
+		</div>
 	</main>
 	
 </body>
