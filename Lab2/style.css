@@ -67,7 +67,7 @@ fieldset {
     margin: 10px 10px 10px 10px;
 }
 .baton {
-     margin-left: 200px;
+    margin-left: 200px;
 }
 .fri {
     color: black;
@@ -121,4 +121,28 @@ a {
 
 .logbtn {
     margin-top: 10px;
+}
+a.button {
+    margin-left: 130px;
+    display: inline-block;
+    background: #ffffff;
+    color: black;
+    padding: 1px;
+    border-radius: 3px;
+    text-decoration: none;
+    font-family: Tahoma;
+    font-size: 18px;
+    line-height: 1;
+    font-weight: 100;
+}
+button {
+    background: #ffffff;
+    color: black;
+    padding: 1px;
+    border-radius: 3px;
+    text-decoration: none;
+    font-family: Tahoma;
+    font-size: 18px;
+    line-height: 1;
+    font-weight: 100;
 }
