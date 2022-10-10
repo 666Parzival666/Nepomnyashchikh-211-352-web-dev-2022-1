@@ -74,6 +74,19 @@ body::after {
     top: 55px;
     flex-shrink: 0;
 }
+.button {
+    margin-left: 50px;
+    display: inline-block;
+    background: #ffffff;
+    color: black;
+    padding: 1px;
+    border-radius: 3px;
+    text-decoration: none;
+    font-family: Tahoma;
+    font-size: 18px;
+    line-height: 1;
+    font-weight: 100;
+}
 
 a {
   text-decoration: none;
