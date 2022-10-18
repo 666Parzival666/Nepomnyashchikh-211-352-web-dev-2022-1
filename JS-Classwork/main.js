@@ -35,7 +35,7 @@ function count(arr) {
 console.log(count([2, 1, 5, 2, 5]));
 
 //№3
-function bubbleSort(arr) {
+function bubbleSort(arr, par) {
     for (let j = arr.length - 1; j > 0; j--) {
         for (let i = 0; i < j; i++) {
             if (arr[i] > arr[i + 1]) {
@@ -140,13 +140,17 @@ console.log(vecLength(AB));
 
 //№5
 function plusK(arr, k){
-    for(let i = 0; i < arr.length; i++){
-        arr[i] = parseInt(arr[i])
-        arr[i] += k
-    } 
+    let cicle = arr.length;
+    for(let i = 0; i < cicle-k; i++) {
+        for (let a = 0; a < cicle - 1; a++){
+            let x = arr[a - 1];
+            arr[a - 1] = arr[a];
+            arr[a] = x;
+        }
+        console.log(arr);
+    }
     return arr;
 }
-
-arr = prompt("Enter an array", '').split(",")
-k = parseInt(prompt("Enter a k value", ''))
+arr = prompt("array?", ' ').split("")
+k = prompt("k?", '') 
 alert(plusK(arr, k))
