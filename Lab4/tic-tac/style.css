@@ -18,7 +18,7 @@ main {
     height: 500px;
     text-align: center;
     position: relative;
-    right: 400px;
+    right: 550px;
 }
 
 #board {
@@ -67,7 +67,18 @@ main {
     color: rgb(117, 6, 6);
     background-color: lightcoral;
 }
-a.new-game-btn {
+a.button {
     text-decoration: none;
     color: black;
+    padding: 10px;
+    font-size:  20px;
+    font-weight: bold;
+    border: 2px solid black;
+    background-color: white;
+    border-radius: 5px;
+}
+.audio{
+    position: relative;
+    top: -260px;
+    right: 150px;
 }
