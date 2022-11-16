@@ -1,23 +1,17 @@
 body {
-    background-image: url("images/fon.png");
+    background-image: url("images/fon2.jpg");
     background-size: 100%;
     margin: 0;
-    font-family: 'Montserrat', sans-serif;
-    font-family: 'Roboto', sans-serif;
-    color: black;
 }
-
-.form_auth_block {
+.block{
     width: 500px;
     height: 500px;
     margin: 0 auto;
 }
-
-.form_auth_block_content{
+.block_content{
   padding-top: 15%;
-
 }
-.form_auth_block_head_text{
+.block_head_text{
     display: block;
     text-align: center;
     padding: 10px;
@@ -25,124 +19,6 @@ body {
     font-weight: 600;
     background: #ffffff;
     opacity: 0.7;
-}
-.form_auth_block label{
-    display: block;
-    text-align: center;
-    padding: 10px;
-    background: #ffffff;
-    opacity: 0.7;
-    font-weight: 600;
-    margin-bottom: 10px;
-    margin-top: 10px;
-}
-.form_auth_block input{
-  display: block;
-  margin: 0 auto;
-  width: 80%;
-  height: 45px;
-  border-radius: 10px;  
-  border:none;
-  outline: none;
-}
-input:focus {
-  color: #000000;
-  border-radius: 10px;
-  border: 2px solid #436fea;
-}
-.btn {
-    display: block;
-    width: 80%;
-    margin: 0 auto;
-    margin-top: 10px;
-    border-radius: 10px;
-    height: 35px;
-    border: none;
-    cursor: pointer;
-}
-fieldset {
-    color: Black;
-    border:0 none;
-    text-align: center;
-    margin: 10px 10px 10px 10px;
-}
-.baton {
-    margin-left: 200px;
-}
-.fri {
-    color: black;
-}
-
-main {
-    text-align: center;
-}
-
-.fio {
-    margin-bottom: 10px;
-}
-
-legend {
-    display: inline-block;
-}
-
-textarea {
-    margin-bottom: 10px;
-    resize: none;
-}
-
-.options {
-    margin-bottom: 10px;
-}
-
-.msg {
-    vertical-align: top;
-}
-
-.agreement {
-    margin-bottom: 10px;
-}
-
-.attach {
-    margin-bottom: 10px;
-}
-
-a {
     text-decoration: none;
     color: black;
-}
-
-.login {
-    margin-bottom: 10px;
-}
-
-.remember {
-    margin-top: 10px;
-}
-
-.logbtn {
-    margin-top: 10px;
-}
-a.button {
-    margin-left: 130px;
-    display: inline-block;
-    background: #ffffff;
-    color: black;
-    padding: 1px;
-    border-radius: 3px;
-    text-decoration: none;
-    font-family: Tahoma;
-    font-size: 18px;
-    line-height: 1;
-    font-weight: 100;
-}
-button {
-    background: #ffffff;
-    color: black;
-    padding: 1px;
-    border-radius: 3px;
-    text-decoration: none;
-    font-family: Tahoma;
-    font-size: 18px;
-    line-height: 1;
-    font-weight: 100;
 }
